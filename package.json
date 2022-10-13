@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "scripts": {
+    "prebuild": "npm run format",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "format": "prettier --write .",
+    "prestart": "npm run build",
+    "start": "node build/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
